@@ -31,7 +31,7 @@ Encoding categorical data
 Normalizing the data
 Splitting the data into test and train
 
-PROGRAM:
+#PROGRAM:
 Register number:212221220037
 Name: P.Pavithra
 import pandas as pd
