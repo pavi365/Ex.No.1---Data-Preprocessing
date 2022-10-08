@@ -63,7 +63,8 @@ print(len(xtest))
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 df1 = sc.fit_transform(df)
-print(df1)```
+print(df1)
+```
 
 ## OUTPUT:
 
