@@ -66,5 +66,6 @@ print(df1)
 
 
 
-##RESULT
+##RESULT:
+Thus the above program for standardizing the given data was implemented successfully
 
