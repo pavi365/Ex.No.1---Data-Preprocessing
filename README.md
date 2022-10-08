@@ -32,10 +32,39 @@ Normalizing the data
 Splitting the data into test and train
 
 ##PROGRAM:
-/Write your code here/
+Register number:212221220037
+Name: P.Pavithra
+import pandas as pd
+df=pd.read_csv("/content/Churn_Modelling.csv")
+df.head()
+df.isnull().sum()
+df.drop(["RowNumber","Age","Gender","Geography","Surname"],inplace=True,axis=1)
+print(df)
+x=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+print(x)
+print(y)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df1 = pd.DataFrame(scaler.fit_transform(df))
+print(df1)
+from sklearn.model_selection import train_test_split
+xtrain,ytrain,xtest,ytest=train_test_split(x,y,test_size=0.2,random_state=2)
+print(xtrain)
+print(len(xtrain))
+print(xtest)
+print(len(xtest))
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+df1 = sc.fit_transform(df)
+print(df1)
 
-##OUTPUT:
-/ Show the result/
+##OUTPUT:![WhatsApp Image 2022-09-24 at 8 25 35 PM](https://user-images.githubusercontent.com/115135775/194694227-8752802d-af16-48ad-a8ef-126985ca46eb.jpeg)
+![WhatsApp Image 2022-09-24 at 8 25 36 PM](https://user-images.githubusercontent.com/115135775/194694239-7602f743-eae9-4929-a9f8-3328ef64db20.jpeg)
+![WhatsApp Image 2022-09-24 at 8 25 36 PM (1)](https://user-images.githubusercontent.com/115135775/194694254-76203660-ad97-4c1a-ba81-99188d9ddcef.jpeg)
+![WhatsApp Image 2022-09-24 at 8 25 36 PM (2)](https://user-images.githubusercontent.com/115135775/194694258-baa297a3-bacf-4c5e-a807-42dbb9a4afc0.jpeg)
+
+
 
 ##RESULT
-/Type your result here/
+
