@@ -66,6 +66,7 @@ df1 = sc.fit_transform(df)
 print(df1)```
 
 ## OUTPUT:
+
 ![WhatsApp Image 2022-09-24 at 8 25 35 PM](https://user-images.githubusercontent.com/115135775/194694227-8752802d-af16-48ad-a8ef-126985ca46eb.jpeg)
 ![WhatsApp Image 2022-09-24 at 8 25 36 PM](https://user-images.githubusercontent.com/115135775/194694239-7602f743-eae9-4929-a9f8-3328ef64db20.jpeg)
 ![WhatsApp Image 2022-09-24 at 8 25 36 PM (1)](https://user-images.githubusercontent.com/115135775/194694254-76203660-ad97-4c1a-ba81-99188d9ddcef.jpeg)
@@ -74,5 +75,6 @@ print(df1)```
 
 
 ## RESULT:
+
 Thus the above program for standardizing the given data was implemented successfully
 
