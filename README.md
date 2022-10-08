@@ -24,16 +24,16 @@ Another aspect is that the data set should be formatted in such a way that more 
 
 
 ## ALGORITHM:
-Importing the libraries
+```Importing the libraries
 Importing the dataset
 Taking care of missing data
 Encoding categorical data
 Normalizing the data
-Splitting the data into test and train
+Splitting the data into test and train```
 
 ## PROGRAM:
 
-Register number:212221220037
+```Register number:212221220037
 Name: P.Pavithra
 import pandas as pd
 df=pd.read_csv("/content/Churn_Modelling.csv")
@@ -58,7 +58,7 @@ print(len(xtest))
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 df1 = sc.fit_transform(df)
-print(df1)
+print(df1)```
 
 ## OUTPUT:![WhatsApp Image 2022-09-24 at 8 25 35 PM](https://user-images.githubusercontent.com/115135775/194694227-8752802d-af16-48ad-a8ef-126985ca46eb.jpeg)
 ![WhatsApp Image 2022-09-24 at 8 25 36 PM](https://user-images.githubusercontent.com/115135775/194694239-7602f743-eae9-4929-a9f8-3328ef64db20.jpeg)
